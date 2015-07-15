@@ -43,7 +43,7 @@ var cif_connector = {
     },
 
     search: function(args) {
-        args.remote = args.remote + '/observables?';
+        args.remote = args.remote + '/observables';
         if (args.query) {
             args.remote += '?q=' + args.query
         }
