@@ -1,5 +1,4 @@
 .project
-*build/
 .git
 tests/html/*
 *DS_Store
