@@ -3,15 +3,16 @@
 The CIF Software Development Kit (SDK) for Javascript contains library code and examples designed to enable developers to build applications using CIF.
 
 # Installation
+To use the components from the CIF SDK for JavaScript, copy the contents of the **lib/** directory to your local directory. Then, include the **cif.js** or **cif.min.js** file from this directory in your code. 
 
 # Examples
 ## Client
 ```javascript
-<script type="text/javascript" src="cif.sdk.js"></script>
+<script type="text/javascript" src="cif.js"></script>
 
 <script type="text/javascript" charset="utf-8">
 
-    var cli = new cif.sdk.Client({token: "1234"});
+    var cli = new cif.Client({token: "1234"});
     cli.ping(function(err, success) {
         if (err) {
             throw err;
